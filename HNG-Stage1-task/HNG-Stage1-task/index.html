@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+      <header class="site-header">
+    <div class="brand">ChristLee</div>
+
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav id="primary-nav" class="nav-links" aria-label="Primary">
+      
+    <a href="index.html"class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  
+  
+
+ <main class="container">
+<article class="profile-card" data-testid="test-profile-card">
+  
+ 
+  <div class="top">
+    <figure class="left-container">
+      <img id="avatar" src="my.jpg" alt="User Avatar" data-testid="test-user-avatar">
+      <input type="file" id="avatarUpload" accept="image/" hidden>
+      <label for="avatarUpload" class="custom-upload">Change Avatar</label>
+   
+    </figure>
+    <div class="info">
+      <h2 data-testid="test-user-name">Emiloju Abegunde Lukuman</h2>
+     
+      <p data-testid="test-user-bio" class="bio">
+        I'm an aspiring professional frontend developer. I am passionte about making it big in tech via turning ideas into interactive, responsive web interfaces. I am really open to continuous learning in order to achieve my goal. Thanks HNG for this opportunity for me to be good and employable.
+      </p>
+       <p>
+        <strong>Current Time in (ms)</strong>: 
+        <span id="time" data-testid="test-user-time">000000000</span>
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Connect Section -->
+  <section class="connect">
+    <h3>Connect With Me</h3>
+    <ul data-testid="test-user-social-links">
+      <li><a href="https://github.com/Iammasterlee" data-testid="test-user-social-github" target="_blank"  > <i class="fab fa-github"></i></a></li>
+      <li><a href="https://x.com/LEmiloju4626?t=ppH4lmVdNlOF3wNxLUeEvQ&s=08" data-testid="test-user-social-Twitter" 
+      target="_blank"  ><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/lukuman-emiloju-2b1355111/" data-testid="test-user-social-linkedIn"  target="_blank" > <i class="fab fa-linkedin"></i></a></li>
+    </ul>
+  </section>
+  <hr>
+
+  <!-- Hobbies and Dislikes -->
+  <div class="lists">
+    <section data-testid="test-user-hobbies">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Building interfaces</li>
+        <li>Watching Movies</li>
+        <li>Learning new things</li>
+      </ul>
+    </section>
+    <section data-testid="test-user-dislikes">
+      <h3>Dislikes</h3>
+      <ul>
+        <li>Noise</li>
+        <li>Slow internet</li>
+      </ul>
+    </section>
+  </div>
+</article>
+</main>
+  <script src="index.js"></script>
+</body>
+</html> 
+
+
+
